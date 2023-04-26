@@ -452,6 +452,7 @@ select {
 }
 
 .books__loading {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,7 +460,12 @@ select {
   font-size: 60px;
   color: #7342d6;
 }
-
+.books__loading--spinner{
+  display: none !important;
+}
+.books__loading .books__loading--spinner{
+  display: block !important;
+}
 .fa-spinner {
   animation: rotate 600ms infinite linear;
 }
